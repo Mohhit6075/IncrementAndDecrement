@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and Decrement</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="w-[100vw] h-[100vh]">
+    <div class="h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-y-10">
+        <h1 class="bg-green-300 p-3 text-xl font-semibold px-12 rounded-sm">Increment And Decrement</h1>
+        <div class="flex w-[335px] py-3 bg-white font-bold text-[#344151] justify-between items-center rounded-sm">
+            <button class="minus text-3xl w-16 py-1 px-5 flex items-center justify-center border-[#888] border-r-2"><svg fill="#344151" width="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 83 83" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M81,36.166H2c-1.104,0-2,0.896-2,2v6.668c0,1.104,0.896,2,2,2h79c1.104,0,2-0.896,2-2v-6.668 C83,37.062,82.104,36.166,81,36.166z"></path> </g> </g></svg></i></button>
+            <div class="counter text-2xl w-40 py-1 flex items-center justify-center">0</div>
+            <button class="plus text-3xl w-16  px-4 flex items-center justify-center border-[#888] border-l-2"><svg width="40" viewBox="0 0 24 24" fill="#344151" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M12 4V20" stroke="#344151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+        </div>
+        <div class="flex flex-col gap-2 rounded-sm">
+            <div class="flex rounded-sm">
+                <input type="text" placeholder="Increment" class="placeholder:text-[#555] px-8 rounded-sm">
+                <button onclick = "rangeAdd()" class="bg-[#FC5011] text-[16px] text-[#111] font-semibold px-3 py-2 rounded-sm">Get Value</button>
+            </div>
+            <div class="flex">
+                <input type="text" placeholder="Decrement" class="placeholder:text-[#555] px-8 rounded-sm">
+                <button onclick = "rangeSub()" class="bg-[#FC5011] text-[16px] text-[#111] font-semibold px-3 py-2 rounded-sm">Get Value</button>
+            </div>
+            <div class="flex">
+                <input type="text" placeholder="Multiple" class="placeholder:text-[#555] px-8 rounded-sm">
+                <button onclick = "rangeMulti()" class="bg-[#FC5011] text-[16px] text-[#111] font-semibold px-3 py-2 rounded-sm">Get Value</button>
+            </div>
+            <div class="flex">
+                <input type="text" placeholder="Division" class="placeholder:text-[#555] px-8 rounded-sm">
+                <button onclick = "rangeDiv()" class="bg-[#FC5011] text-[16px] text-[#111] font-semibold px-3 py-2 rounded-sm">Get Value</button>
+            </div>
+            <button class="clear bg-[#f8ff33] text-lg font-semibold py-2 rounded-sm">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
